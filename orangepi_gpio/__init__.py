@@ -17,10 +17,14 @@ DOMAIN = "orangepi_gpio"
 async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
     """Set up the Orange Pi GPIO component."""
     _LOGGER.warning(
-        "The Orange Pi GPIO integration is deprecated and will be removed "
+        "The Orange Pi GPIO integration is deprecated and is removed "
         "in Home Assistant Core 2022.4; this integration is removed under "
         "Architectural Decision Record 0019, more information can be found here: "
         "https://github.com/home-assistant/architecture/blob/master/adr/0019-GPIO.md"
+    )
+    _LOGGER.warning(
+        "This custom component you are using, will also not be maintained and "
+        "should only be used to give yourself more time to switch to a proper solution."
     )
 
     def cleanup_gpio(event):

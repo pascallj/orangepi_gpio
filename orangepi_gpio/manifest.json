@@ -5,5 +5,6 @@
   "requirements": ["OPi.GPIO==0.5.2"],
   "codeowners": ["@pascallj"],
   "iot_class": "local_push",
-  "loggers": ["OPi", "nanopi", "orangepi"]
+  "loggers": ["OPi", "nanopi", "orangepi"],
+  "version": "1.0.0"
 }
